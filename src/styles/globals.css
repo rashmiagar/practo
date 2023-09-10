@@ -25,3 +25,37 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown .dropdown-menu:after {
+   content: "";
+   position: absolute;
+   left: 40%;
+   top: 0px;
+   margin-left: -20px;
+   transform-origin: 0 0;
+   -webkit-transform: rotate(135deg);
+   box-shadow: -2px 2px 2px -1px rgb(0 0 0 / 10%);
+   border: 7px solid #ffffff;
+   border-color: transparent transparent white transparent;
+}
+
+.dropdown2:hover > .dropdown-submenu {
+  display: block;
+  left: 100%;
+}
+
+.dropdown2 > .dropdown-submenu:before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: 90%;
+  margin-right: 10px;
+  border: 7px solid #ffffff;
+  -webkit-transform: rotate(135deg);
+  box-shadow: 1px 1px 0 0 rgb(0 0 0 / 15%);
+  border-color: transparent white white transparent;
+}
